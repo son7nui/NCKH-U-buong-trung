@@ -1,0 +1,15 @@
+# MMOTU OTU_2d Ovarian Tumor Dataset configuration for YOLO
+path: C:/Users/ADMIN/source/repos/NCKH/dataset_yolo
+train: images/train
+val: images/val
+
+# Classes (8 fine-grained classes)
+names:
+  0: Chocolate cyst
+  1: Serous cystadenoma
+  2: Teratoma
+  3: Theca cell tumor
+  4: Simple cyst
+  5: Normal ovary
+  6: Mucinous cystadenoma
+  7: High-grade serous
