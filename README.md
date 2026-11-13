@@ -78,3 +78,4 @@ python src/evaluate_and_visualize.py --weights runs/detect/runs/detect/ovarian_t
   - Mucinous cystadenoma: **21.1%**
   - Teratoma: **20.7%**
 - **Trọng số mô hình**: Lưu tại `runs/detect/runs/detect/ovarian_tumor_yolo11n/weights/best.pt`.
+
