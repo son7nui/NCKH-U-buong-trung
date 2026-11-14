@@ -88,8 +88,8 @@ def extract_bboxes_from_mask(mask_path, img_w, img_h, min_area=30):
 
     return yolo_boxes, pixel_boxes
 
-def crop_roi_with_padding(img, bbox, pad_ratio=0.10, target_size=(300, 300)):
-    """Crops bounding box with padding margin and resizes to target size."""
+def crop_roi_with_padding(img, bbox, pad_ratio=0.15, target_size=(300, 300)):
+    """Crops bounding box with padding margin (15%) and resizes to target size."""
     h, w = img.shape[:2]
     x1, y1, x2, y2 = bbox
     bw, bh = x2 - x1, y2 - y1
@@ -168,7 +168,7 @@ def process_modality(data_dir, prefix, split_name, binary_img_dir, binary_lbl_di
             # If bboxes detected, crop each box
             if pixel_boxes:
                 for idx, pbox in enumerate(pixel_boxes):
-                    roi = crop_roi_with_padding(img, pbox, pad_ratio=0.10, target_size=(300, 300))
+                    roi = crop_roi_with_padding(img, pbox, pad_ratio=0.15, target_size=(300, 300))
                     if roi is not None:
                         crop_filename = f"{prefix}_{base_id}_crop{idx}.jpg"
                         cv2.imwrite(str(target_crop_folder / crop_filename), roi)
