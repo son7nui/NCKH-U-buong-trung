@@ -1,0 +1,8 @@
+Lớp Bệnh Học,Support (N),Precision,Recall,F1-Score
+Chocolate_cyst,336,87.59%,75.60%,81.15%
+High_grade_serous,53,38.98%,43.40%,41.07%
+Mucinous_cystadenoma,104,58.33%,67.31%,62.50%
+Serous_cystadenoma,219,66.96%,68.49%,67.72%
+Simple_cyst,66,49.33%,56.06%,52.48%
+Teratoma,336,87.08%,70.24%,77.76%
+Theca_cell_tumor,88,65.08%,46.59%,54.30%

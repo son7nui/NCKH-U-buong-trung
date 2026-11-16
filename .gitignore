@@ -13,3 +13,11 @@ Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
 
+# Heavy deep learning checkpoints (saved to Google Drive)
+ket qua/**/*.pth
+ket qua/**/*.pt
+*.pth
+*.pt
+!yolo11n.pt
+
+

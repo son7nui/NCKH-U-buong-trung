@@ -1,0 +1,17 @@
+{
+  "python_version": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "torch_version": "2.14.1+cu130",
+  "cuda_available": true,
+  "device_name": "Tesla T4",
+  "SEED": 42,
+  "APPLY_INPAINTING": true,
+  "BOX_JITTER": false,
+  "ocr_status": "Available (en + ch_sim)",
+  "fold_times_seconds": {
+    "fold_0": 896.79,
+    "fold_1": 866.61,
+    "fold_2": 880.96,
+    "fold_3": 855.24,
+    "fold_4": 887.02
+  }
+}
